@@ -1,4 +1,4 @@
-# Tridion-sntich
+# Tridion-sntich an event system plugin
 
 Created to log all edits to the following tridion items:
 

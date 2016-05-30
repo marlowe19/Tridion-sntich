@@ -7,18 +7,24 @@ using Tridion.ContentManager.Extensibility.Events;
 
 namespace Tridion.Snitch.Application.library.TridionEvents
 {
+    [TcmExtension("TridionSnitch")]
     public class ChangeEvent: TcmExtension
     {
+        public ChangeEvent()
+        {
+	        Subscribe();
+        }
+
         public void Subscribe()
         {
             // OnComponentSavePre
-            EventSystem.Subscribe<VersionedItem, SaveEventArgs>(OnItemSavePre, EventPhases.All);
+            EventSystem.Subscribe<VersionedItem, SaveEventArgs>(OnItemSavePre, EventPhases.Initiated);
         }
         private static void OnItemSavePre(VersionedItem item, SaveEventArgs args, EventPhases phase)
         {
             var title = item.Title;
             var writer = new FileWriter();
-
+            
             var item4 = args;
             var user = new User()
             {
@@ -34,7 +40,7 @@ namespace Tridion.Snitch.Application.library.TridionEvents
                     }
                 }
             };
-            //writer.WriteAction(user);
+            writer.WriteAction(user);
             args.ContextVariables.Add(title, DateTime.Now);
         }
     }

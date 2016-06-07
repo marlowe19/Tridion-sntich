@@ -4,6 +4,7 @@ namespace Tridion.Snitch.Application.library
 {
     public class UserAction
     {
+        public string Id { get; set; }
         public string ActionName { get; set; }
         public string ActionDetails { get; set; }
         public DateTime ActionTime { get; set; }

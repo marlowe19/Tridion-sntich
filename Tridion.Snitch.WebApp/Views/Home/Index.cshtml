@@ -1,0 +1,24 @@
+﻿@model Tridion.Snitch.WebApp.Models.Peeps
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Tridion Snitch</h1>
+   
+</div>
+
+<div class="row">
+    @foreach (var item in Model.UserList)
+    {
+        <div class="col-md-4">
+            <h2>Widget</h2>
+
+            <p>
+                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Export</a>
+            </p>
+        </div>
+    }
+   
+</div>

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tridion.Snitch", "Tridion.Snitch\Tridion.Snitch.csproj", "{F251B8C3-55A9-4C05-90C8-62FBACDF40E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tridion.Snitch.WebApp", "Tridion.Snitch.WebApp\Tridion.Snitch.WebApp.csproj", "{DF996B7B-52AF-406A-9251-C32914BEE903}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F251B8C3-55A9-4C05-90C8-62FBACDF40E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F251B8C3-55A9-4C05-90C8-62FBACDF40E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F251B8C3-55A9-4C05-90C8-62FBACDF40E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF996B7B-52AF-406A-9251-C32914BEE903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF996B7B-52AF-406A-9251-C32914BEE903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF996B7B-52AF-406A-9251-C32914BEE903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF996B7B-52AF-406A-9251-C32914BEE903}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

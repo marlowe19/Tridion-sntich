@@ -28,12 +28,13 @@ namespace Tridion.Snitch.Application.library.TridionEvents
             var item4 = args;
             var user = new User()
             {
-                LastName = "Doe",
+                
                 Name = item.Session.User.Title,
                 UserActions = new List<UserAction>()
                 {
                     new UserAction()
                     {
+                        Id = item.Id.ToString(),
                         ActionDetails = item.WebDavUrl,
                         ActionName = item.Title,
                         ActionTime = DateTime.Now

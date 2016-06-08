@@ -1,10 +1,10 @@
-using Tridion.ContentManager.Security;
-
+using Tridion.Snitch.Application.library;
+using System;
+using System.Data.Entity;
+using System.Linq;
 namespace Tridion.Snitch.Application.communication
 {
-    using System;
-    using System.Data.Entity;
-    using System.Linq;
+ 
 
     public class SnitchDb : DbContext
     {
@@ -19,6 +19,7 @@ namespace Tridion.Snitch.Application.communication
         {
         }
         public DbSet<User> Students { get; set; }
+        public DbSet<UserAction> UserAction { get; set; }
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
@@ -26,9 +27,4 @@ namespace Tridion.Snitch.Application.communication
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
     }
 
-    //public class MyEntity
-    //{
-    //    public int Id { get; set; }
-    //    public string Name { get; set; }
-    //}
 }

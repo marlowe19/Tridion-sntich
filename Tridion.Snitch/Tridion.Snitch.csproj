@@ -97,6 +97,15 @@
     <Compile Include="Application\library\TridionEvents\ChangeEvent.cs" />
     <Compile Include="Application\library\User.cs" />
     <Compile Include="Application\library\UserAction.cs" />
+    <Compile Include="Migrations\201606080817565_SnitchDb.cs" />
+    <Compile Include="Migrations\201606080817565_SnitchDb.Designer.cs">
+      <DependentUpon>201606080817565_SnitchDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606080825046_SnitchDb1.cs" />
+    <Compile Include="Migrations\201606080825046_SnitchDb1.Designer.cs">
+      <DependentUpon>201606080825046_SnitchDb1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -109,6 +118,14 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201606080817565_SnitchDb.resx">
+      <DependentUpon>201606080817565_SnitchDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606080825046_SnitchDb1.resx">
+      <DependentUpon>201606080825046_SnitchDb1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

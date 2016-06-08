@@ -34,7 +34,7 @@ namespace Tridion.Snitch.Application.library.TridionEvents
                 {
                     new UserAction()
                     {
-                        Id = item.Id.ToString(),
+                        
                         ActionDetails = item.WebDavUrl,
                         ActionName = item.Title,
                         ActionTime = DateTime.Now

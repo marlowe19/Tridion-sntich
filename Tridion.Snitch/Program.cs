@@ -14,7 +14,7 @@ namespace Tridion.Snitch
             var writer = new FileWriter();
             var user = new User()
             {
-                LastName = "Doe",
+              
                 Name = "John",
                 UserActions = new List<UserAction>()
                 {

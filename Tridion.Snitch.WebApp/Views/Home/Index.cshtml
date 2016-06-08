@@ -3,10 +3,10 @@
 @{
     ViewBag.Title = "Home Page";
 }
-
 <div class="jumbotron">
+
     <h1>Tridion Snitch</h1>
-   
+
 </div>
 
 <div class="row">
@@ -14,8 +14,15 @@
     {
         <div class="col-md-4">
             <h2>Widget</h2>
-
             <p>
+                @item.Name
+                <ul>
+                    @foreach (var action in item.UserActions)
+                    {
+                        <li>@action.ActionName</li>
+                    }
+                </ul>
+              
                 <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Export</a>
             </p>
         </div>

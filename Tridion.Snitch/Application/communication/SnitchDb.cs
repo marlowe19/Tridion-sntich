@@ -18,7 +18,7 @@ namespace Tridion.Snitch.Application.communication
             : base("name=SnitchDb.cs")
         {
         }
-        public DbSet<User> Students { get; set; }
+        public DbSet<User> Users { get; set; }
         public DbSet<UserAction> UserAction { get; set; }
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 

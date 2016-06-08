@@ -14,14 +14,28 @@ namespace Tridion.Snitch.WebApp.Controllers
         public ActionResult Index()
         {
             var db = new SnitchDb();
-            var userAction = new UserAction() { ActionName = "Content marlowe" };
+            var users = new User()
+            {
+                Name = "Marlowe",
+                UserActions = new List<UserAction>() {new UserAction() {ActionName = "Component template"}}
+            };
+            var model = new Peeps();
+            var userAction = new UserAction()
+            {
+                ActionName = "Content marlowe",
+                ActionDetails = "Component Template",
+                ActionTime = DateTime.Now
+            };
+            db.Users.Add(users);
             db.UserAction.Add(userAction);
             db.SaveChanges();
             if (db.UserAction != null)
             {
-                var users = db.UserAction.ToList();
+                model.UserList = db.Users.ToList();
             }
-            var model = new Peeps();
+           
+
+            model.UserList.Add(users);
             return View(model);
         }
 

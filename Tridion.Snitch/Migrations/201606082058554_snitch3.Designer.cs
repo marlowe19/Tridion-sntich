@@ -7,13 +7,13 @@ namespace Tridion.Snitch.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class SnitchDb : IMigrationMetadata
+    public sealed partial class snitch3 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(SnitchDb));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(snitch3));
         
         string IMigrationMetadata.Id
         {
-            get { return "201606080817565_SnitchDb"; }
+            get { return "201606082058554_snitch3"; }
         }
         
         string IMigrationMetadata.Source

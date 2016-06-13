@@ -84,13 +84,20 @@
     <Reference Include="Tridion.ContentManager.Publishing">
       <HintPath>..\..\TridionAssetsSync\Dependencies\Tridion.ContentManager.Publishing.dll</HintPath>
     </Reference>
+    <Reference Include="Tridion.Logging, Version=7.1.0.52, Culture=neutral, PublicKeyToken=ddfc895746e5ee6b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\sdl-showcase\Dependencies\Dll\Tridion.Logging.dll</HintPath>
+    </Reference>
     <Reference Include="VBIDEApi, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a3637beacf571e8a, processorArchitecture=MSIL">
       <HintPath>..\packages\NetOffice.Core.Net45.1.7.4-pre-jun-28-2015\lib\net45\VBIDEApi.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application\communication\SnitchDb.cs" />
+    <Compile Include="Application\Data access\Repository\IRepository.cs" />
+    <Compile Include="Application\Data access\Repository\UserActionRepository.cs" />
+    <Compile Include="Application\Data access\Repository\UserRepository.cs" />
+    <Compile Include="Application\Data access\SnitchDb.cs" />
     <Compile Include="Application\library\ExcelWriter.cs" />
     <Compile Include="Application\library\FileWriter.cs" />
     <Compile Include="Application\Contracts\IFileWriter.cs" />
